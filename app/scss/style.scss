@@ -248,7 +248,8 @@
 
 .our {
   padding: 75px 0;
-background-color: #F8F8F8;
+  background-color: #F8F8F8;
+
   &__title {
     font-size: 34px;
     line-height: 55px;
@@ -270,7 +271,8 @@ background-color: #F8F8F8;
     background-color: #fff;
     border-radius: 20px;
     padding: 30px 30px 30px 60px;
-    &:nth-child(2n){
+
+    &:nth-child(2n) {
       flex-direction: row-reverse;
     }
   }
@@ -309,6 +311,129 @@ background-color: #F8F8F8;
   &__img {}
 }
 
+.start {
+  padding-top: 75px;
+  text-align: center;
+
+  &__title {
+    font-size: 34px;
+    line-height: 55px;
+    @extend %roboto-700;
+    margin-bottom: 15px;
+  }
+
+  &__descr {
+    margin-bottom: 35px;
+  }
+
+  &__btn-wrapper {}
+
+  &__telegram {
+    color: #fff;
+    padding: 12px 25px;
+    background-color: #2C2B2B;
+    border-radius: 50px;
+    transition: all .3s;
+    margin-bottom: 40px;
+    display: inline-block;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  &__img {
+    margin: 0 auto;
+  }
+}
+
+
+.footer {
+  background-color: #141223;
+  padding: 110px 0;
+  color: #fff;
+  margin-top: -250px;
+  position: relative;
+  z-index: 999;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+  }
+
+  &__content {
+    max-width: 340px;
+  }
+
+  &__link {
+    margin-bottom: 16px;
+    display: inline-block;
+  }
+
+  &__logo {}
+
+  &__descr {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__soc-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__lists {
+    display: flex;
+    gap: 120px;
+  }
+
+  &__list-wrapper {}
+
+  &__text {
+    font-size: 18px;
+    line-height: 30px;
+    @extend %roboto-700;
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__item {}
+
+  &__item-link {
+    font-size: 16px;
+    line-height: 30px;
+    color: #D7D7D7;
+    padding-bottom: 4px;
+    border-bottom: 1px solid transparent;
+    transition: all .3s;
+
+    &:hover {
+      border-bottom: 1px solid #D7D7D7;
+    }
+  }
+}
+
+
+@keyframes do-levitation {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(0, 15px);
+  }
+}
+.levitate {
+  animation: do-levitation 1.2s alternate ease-in-out infinite;
+}
 
 
 @import 'media';
