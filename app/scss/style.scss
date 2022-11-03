@@ -40,6 +40,10 @@
       border-bottom: 1px solid #000;
     }
   }
+
+  &__btn {
+    display: none;
+  }
 }
 
 .menu {
@@ -50,6 +54,8 @@
     display: flex;
     gap: 40px;
   }
+
+
 
   &__link {
     color: #000;
@@ -355,6 +361,7 @@
   margin-top: -250px;
   position: relative;
   z-index: 999;
+
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -431,6 +438,7 @@
     transform: translate(0, 15px);
   }
 }
+
 .levitate {
   animation: do-levitation 1.2s alternate ease-in-out infinite;
 }
